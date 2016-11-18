@@ -1,0 +1,28 @@
+1. Для того, чтобы установить шрифт Helvetica в свой HTML-проект, сперва скопируйте содержимое архива в папку /fonts, которая должна лежать в той-же директории, что и папка /css вашего HTML сайта.
+
+Cтруктура проекта после установки шрифтов:
+/ (корневой каталог шаблона или проекта)
+
+    /fonts (Шрифты из архива распаковываем в папку /fonts)
+        /HelveticaRegular
+        /HelveticaBold
+        /HelveticaItalic
+        /HelveticaLight
+        /HelveticaBlack
+        /HelveticaHeavy
+        /HelveticaMedium
+        /HelveticaThin
+        /HelveticaUltraLight
+        /HelveticaBoldItalic
+        /HelveticaBlackItalic
+        /HelveticaLightItalic
+        /HelveticaMediumItalic
+        /HelveticaHeavyItalic
+        /HelveticaThinItalic
+        /HelveticaUltraLightItalic
+
+    /css (Папка со стилями должна находиться в той-же категории, что и /fonts)
+        /stylename.css (Файл стилей, в котором подключаются русские шрифты)
+
+
+2. Далее вставляем код, указанный ниже, в файл стилей, который должен находиться в папке /css.

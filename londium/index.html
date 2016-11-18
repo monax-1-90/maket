@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>main page</title>
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="dist/css/style.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+   <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/parallax.js"></script>
+  <script src="dist/js/jquery-1.6.1.min.js"></script>
+  <script src="dist/js/modernizr.custom.37797.js"></script>
+ 
+</head>
+<body>
+
+    <script>
+    $(window).load(function() {
+      $('#before-load').find('i').fadeOut().end().delay(600).fadeOut('slow');
+    });
+    
+
+
+// jQuery(function(f){
+//     var element = f('#back-top');
+//     f(window).scroll(function(){
+//         element['fade'+ (f(this).scrollTop() > 1250 ? 'In': 'Out')](700);           
+//     });
+// });
+function parallaxScroll(){
+    var scrolled = $(window).scrollTop();
+    $('#parallax-bg1').css('top',(0-(scrolled*.225))+'px');
+    $('#parallax-bg3').css('top',(0-(scrolled*.185))+'px');
+}
+
+jQuery(function(f){
+    var element = f('#back-top');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 1250 ? 'In': 'Out')](700);           
+    });
+});
+    </script>
+
+
+
+
+
+
+
+<!-- _____________________анимация загрузки, стили с css -->
+
+
+<div id="before-load">
+ <div class="befor-load-1"></div>
+ <p class="load">
+	<span class="load-1">LONDIUM
+		<br> <span class="load-2">loading</span> 	
+	</span>
+
+ </p>
+</div>
+
+<!-- ________________________________END____________________________ -->
+
+
+
+<div class="header">
+<div class="container-fluid">
+<div class="row">
+
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 link-left">
+	<a href="#">Женщины</a>
+	<a href="#">Мужчины</a>
+	</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 logo">
+<a href="#"><img src="img/logo.png" class="center-block" alt="/"></a>	
+</div>	
+
+
+	<div class="col-md-4 col-sm-4 link-right">
+	<a href="#">Новокузнецк</a>
+	<div class="ico-up"> <img src="img/ico.png" alt=""><a href="#">Магазины</a></div>
+	</div>
+
+</div>	
+</div>
+</div>
+
+
+
+<!--Тело-->
+
+
+<main>
+	
+	<div class="containet">
+		<div class="row row-1">
+			
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 women women-1">
+			<div class="mask"></div>
+			<img src="img/wom.png" style="width:100%; height:100%;"  alt="/">
+			<div class="center-left">
+			<div class="center-left-1"><a href="shop.html"><img src="img/left.png" "class="left" alt="/"></a>
+			</div></div>
+			<div class="wom-link"><p>для женщин</p></div>
+			</div>
+			
+			
+
+			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 women women-1">
+			<div class="mask"></div>
+			<img src="img/men.png" style="width:100%; height:100%;"  alt="/">
+			<div class="center-right">
+			<div class="center-right-1"><img src="img/right.png" "class="left" alt="/">	
+			</div></div>
+			<div class="men-link"><p>для мужчин</p></div>
+			</div>
+			
+			
+			<div class="center">
+			<div class="center-scroll"><img src="img/scroll.png" alt=""></div></div>
+		
+
+
+		<div class="center-casual">
+			<div class="center-casual-1"><p class="cas"><span class="casual">CASUAL</span><br> на каждый день</p></div></div>
+		</div>
+            </div>
+       
+
+
+<!-- ____________________________________________________________________________________ -->
+       
+ <div class="container">
+
+<div class="row row-2">
+	
+
+       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 cas-1">
+    
+<p>
+ <span class="about-1">CASUAL <hr></span>
+ 	<br>
+ 		<span class="about-2">-стиль, главными чертами которого является практичность, удобство, пространства силуэтов, непринужденность сочетаний, а также многослойность</span>
+ </p>
+
+       </div>    
+
+       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sale-1">
+       	<img src="img/sale.png" style="height: 100%; width: 100%;" alt="/">
+       		
+       		
+       		<div class="skidka">
+       			<p><span>30</span>% <br> скидка</p>	
+			<a href="form.html"><button type="button" class="btn btn-default btn-1">Получить скидку</button></a>
+       		</div>
+
+       </div>     
+
+       <div class="londium"><img src="img/londium.png" style="height: 50%; width: 50%;" alt="/"></div>
+
+
+
+
+       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 model-1"><img src="img/model1.png" style="height: 100%; width: 100%;" alt=""></div>
+				<div class="ubka">
+       			<p><span>Юбка</span><br><br>от 3200 р.</p>	
+			<button type="button" class="btn btn-default btn-2">вся коллекция</button>
+       			</div>
+
+       			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 model-2">
+       			<img src="img/model2.png" style="height: 100%; width: 100%;" alt="">
+       			<div class="reklama-2">
+       				<p>Шарф <br> <span>от 3200 р.</span></p>       				
+       			</div>
+       			<button type="button" class="btn btn-default btn-3">вся коллекция</button>
+       			</div>
+			   
+
+
+
+
+</div>
+
+
+
+<div class="row row-5">
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 box-7">
+		<div class="center-2">
+			<div class="magaz"> 
+			<div id="back-top"><p>Смотри фото <br>
+				и схему проезда <br>
+				магазинов
+			</p><img src="img/arrow.png" class="black-img" alt=""></div>
+			
+
+			</div>
+			<hr style="width: 18%; padding: 0; margin-top: 3%; margin-left: 10%; float: left;">
+			<div class="button">
+				
+			<img src="img/ico.png" class="ico-3" alt="">
+			<a href="maps.html"><button type="button"  data-title="Проверка всплывающей подсказки" class="btn btn-default btn-4">магазины</button></a></div>
+			<hr style="width: 18%; padding: 0; margin-top: -3%; margin-right: 10%; float: right;">
+		</div>
+	</div>		
+</div>			
+
+
+
+
+
+<!-- <div class="center-2">
+			<div class="magaz"> <img src="img/ico.png" class="btn-4 ico-3" alt="">
+			<div id="back-top"><p>Смотри фото <br>
+				и схему проезда <br>
+				магазинов
+			</p><img src="img/arrow.png" class="black-img" alt=""></div>
+			<a href="maps.html"><button type="button"  data-title="Проверка всплывающей подсказки" class="btn btn-default btn-4">магазины</button></a>
+			</div>
+</div> -->
+
+
+
+</div> 
+</div>
+
+</main>
+      
+<!--Подвал-->
+<footer>
+<!-- <hr style="width: 100%; padding: 0; margin: 0;"> -->
+<div class="container"> <div class="row"> 
+
+
+
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 link-foot">
+<p>LONDIUM- <br> магазан одежды CASUAL</p>
+</div>
+
+
+
+
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 link-left-2">
+	<a href="#">Женщины</a>
+	<a href="#">Мужчины</a>
+	</div>
+
+
+	<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 link-right-2">
+	<a href="#" class="nvk">Новокузнецк</a>
+	<div class="ico-1"> <img src="img/ico.png" alt=""><a href="maps.html"><a href="#">Магазины</a></a></div>
+	</div>
+
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ico-social">
+<h4>Присоединяйтесь</h4>
+<a href="#" class="ico-social-1 fac"></a>
+<a href="#" class="ico-social-1 vk"></a>
+<a href="#" class="ico-social-1 tw"></a>
+<!-- <img src="img/ico2.png" alt=""> --></div>
+
+	
+</div></div>
+</footer>
+
+
+
+		<!-- Parallax foreground -->
+
+
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="img/home2.png" alt="Montgolfier hot air balloon"/>
+				
+			</div>
+
+
+		<!-- Parallax  midground clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/home1.png" alt="cloud"/>
+			</div>
+
+  
+
+
+
+
+
+
+
+  </body>
+</html>

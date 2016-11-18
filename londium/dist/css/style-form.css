@@ -1,0 +1,237 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	min-width: 1220px;	
+	padding: 0px;
+	margin: 0px;
+
+}
+
+   @font-face {
+    font-family: Helvetica; /* Имя шрифта */
+    src: url(stylename.css); /* Путь к файлу со шрифтом */
+   }
+
+/*____________________________________________________FORMA_____________________________________________*/
+
+.container-back{
+background-image: url(../../img/form/fon.png);
+	    -moz-background-size: 100%; Firefox 3.6+
+    -webkit-background-size: 100%; Safari 3.1+ и Chrome 4.0+
+    -o-background-size: 100%; Opera 9.6+
+    background-size: 100%;
+	width: 100%;
+	height:100%;
+	position: fixed;
+/*	overflow: hidden;
+*/	padding: 0;
+}
+div>.row{
+/*	background-image: url(../../img/form/fon.png);*/
+	padding: 0px;
+	margin-right: 0px;
+}
+.col-lg-3,.col-md-3,.col-sm-3,.col-xs-3{
+	margin-top: 16%;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.arrow{
+	padding: 0;
+	position: absolute;
+	top: 38%;
+	left: -25%;
+	width: 30%;
+	height: 15%;
+}
+
+.close{
+	position: absolute;
+	top: 0px;
+	left: 100px;
+	width: 10%;
+	height: 150px;
+}
+
+.paral-right{
+	padding: 0;
+	width: 20%;
+	margin: 0%;
+	position: absolute;
+	top: -200px;
+	left: 10%;
+
+}
+/*_____________________________________________________END_________________________________________________*/
+
+/*___________________________________________ТЕКСТ_______________________________________________*/
+
+.skidka-1{
+	position: absolute;
+	top: 44%;
+	left: 27%;
+	font-size: 1vh;
+	color: #fff;
+}
+
+.skidka-2{
+	margin-left: -50px;
+}
+
+div>h3{
+	color: #fff;
+	font-family: Helvetica;
+	font-size: 3.5vh;
+	margin-right: -50px;
+}
+.txt-1{
+	font-weight: bolder;
+}
+.txt-2{
+	padding: 0;
+	font-family: Helvetica;
+}
+.txt-3{
+	font-family: Helvetica;
+}
+div>h6{
+	font-family: Helvetica;
+	font-size: 1.05vh;
+	margin-right: -50px;
+}
+
+/*_____________________________________________________END_________________________________________________*/
+/*___________________________________________________ФОРМА____________________________________________*/
+
+
+.inpute-1{
+	background:none;
+	border: none;
+	font-size: 2vh;
+	border-bottom: 1px solid #111;
+
+}
+.button{
+	position: absolute;
+	top: 90%;
+	left: 70%;
+	background-color: #e40c2f;
+	color: #fff;
+	border: none;
+	padding: 0 5px 0 5px;
+	margin-right: -30px;
+}
+
+/*_____________________________________________________END_________________________________________________*/
+
+#paralax:before {
+  content: attr(data-content);
+  display: inline-block;  
+  position: absolute;  
+  top: 50%;
+  left: 15%;
+  width: 30%;
+  height: 40%;
+  padding: 0;
+  margin-top: 35%;
+  opacity: 0.7;
+  background: url(../../img/form/paral.png) no-repeat;
+  background-size: 80%;
+  animation: timing 8s forwards;
+  animation-direction: alternate-normal;
+  /*border: 2px solid #fff;*/
+  }
+
+@keyframes timing {
+  
+0.001%{
+   top: -40%;
+  	margin-top: 100%;
+  	opacity: 0;
+    }
+50%{	
+   top: -40%;
+  	margin-top: 43%;
+ 	opacity: 0.3;
+}
+99.001%{
+   top: -40%;
+  	margin-top: 45%;
+  	opacity: 0.39;
+}
+100%{
+   top: -40%;
+  	margin-top: 45.5%;
+  	opacity: 0.51;
+ }
+
+
+    #before-load {
+      position: fixed; 
+      left: 0; top: 0; right: 0; bottom: 0; 
+      background: #111; 
+      z-index: 1001; /*располагаем его над всеми элементами на странице*/
+      color: #fff;
+    }
+
+#before-load p{
+	position: absolute;
+	top: 35%;
+	left: 35%;
+
+}
+.load-1{
+
+	font-size: 10vh;
+}
+.load-2{
+	position: absolute;
+	top: 100%;
+	left: 40%;
+	padding-top: 20%;
+	font-size: 3vh;
+}
+
+/*
+.befor-load-1 { 
+
+width:100%; height:100%;
+  background:#ccc;
+  animation:flipAround 2s infinite;
+  transform-origin:left;
+}
+@keyframes flipAround {
+	 100% { transform-origin:left; animation-mode:forwards; transform:rotateY(-180deg); }
+ 
+*/
+
+
+.befor-load-1:before {
+  content: attr(data-content);
+  display: inline-block;  
+  position: absolute;  
+  top: 0%;
+  left: 0%;
+  width: 20%;
+  height: 100%;
+  padding: 0;
+  /*margin-top: 35%;*/
+  opacity: 0.7;
+  z-index: 9999999;
+  background: #fff;
+  /*background-size: 100%;*/
+  animation: timing 2.3s forwards;
+  animation-direction: alternate-normal;
+  
+  }
+
+@keyframes timing {
+  
+
+100%{
+   
+  	margin-left: 100%;
+  	
+ }
